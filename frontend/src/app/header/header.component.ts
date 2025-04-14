@@ -53,7 +53,7 @@ export class HeaderComponent implements OnInit {
           this.userDetails = response;
         },
         (error: any) => {
-          console.error('Error fetching user detail:', error);
+          console.error('Error fetching user details:', error);
         }
       );
     }
