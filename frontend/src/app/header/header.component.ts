@@ -49,11 +49,11 @@ export class HeaderComponent implements OnInit {
   
       this.userService.getUserDetails(userIdNumber.toString()).subscribe(
         (response: any) => {
-          console.log('User details:', response);
+          console.log('User detail:', response);
           this.userDetails = response;
         },
         (error: any) => {
-          console.error('Error fetching user details:', error);
+          console.error('Error fetching user detail:', error);
         }
       );
     }
